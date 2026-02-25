@@ -69,7 +69,7 @@ export async function GET(request: Request) {
 
   const rows = Math.ceil(daysInYear / COLUMNS);
   const padX = Math.round(width * 0.06);
-  const padTop = Math.round(height * 0.20);
+  const padTop = Math.round(height * 0.30);
   const padBottom = Math.round(height * 0.14);
   const gridW = width - 2 * padX;
   const gridH = height - padTop - padBottom;
