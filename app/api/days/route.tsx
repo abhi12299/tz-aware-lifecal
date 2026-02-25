@@ -68,15 +68,15 @@ export async function GET(request: Request) {
   const percent = Math.round((dayOfYear / daysInYear) * 100);
 
   const rows = Math.ceil(daysInYear / COLUMNS);
-  const padX = Math.round(width * 0.04);
+  const padX = Math.round(width * 0.06);
   const padTop = Math.round(height * 0.06);
-  const padBottom = Math.round(height * 0.08);
+  const padBottom = Math.round(height * 0.14);
   const gridW = width - 2 * padX;
   const gridH = height - padTop - padBottom;
   const cellW = gridW / COLUMNS;
   const cellH = gridH / rows;
   const cellSize = Math.min(cellW, cellH);
-  const diameter = Math.round(cellSize * 0.72);
+  const diameter = Math.round(cellSize * 0.78);
   const gap = Math.round(cellSize - diameter);
   const totalGridW = COLUMNS * diameter + (COLUMNS - 1) * gap;
   const totalGridH = rows * diameter + (rows - 1) * gap;
@@ -123,7 +123,7 @@ export async function GET(request: Request) {
         style={{
           display: "flex",
           position: "absolute",
-          bottom: Math.round(padBottom * 0.35),
+          bottom: Math.round(padBottom * 0.45),
           left: 0,
           width: "100%",
           justifyContent: "center",

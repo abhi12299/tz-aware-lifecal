@@ -6,7 +6,7 @@ export const COLORS = {
   text: "#8E8E93",
 } as const;
 
-export const COLUMNS = 19;
+export const COLUMNS = 15;
 
 export const PHONE_MODELS = [
   {
