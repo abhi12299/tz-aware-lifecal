@@ -1,4 +1,4 @@
-# lifecal
+# [lifecal](https://tz-aware-lifecal.vercel.app/)
 
 A timezone-aware year progress calendar that generates dynamic iPhone wallpapers. Every day, a dot fills in — past days turn light, today glows orange, and the rest wait in the dark. Set it as your lock screen and it refreshes each morning via iOS Shortcuts.
 
