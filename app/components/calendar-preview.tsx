@@ -26,7 +26,7 @@ export function CalendarPreview() {
         className="relative bg-[#1C1C1E] rounded-[2.5rem] p-2.5 shadow-[0_0_80px_rgba(255,107,53,0.06)]"
         style={{ aspectRatio: "1 / 2.17" }}
       >
-        <div className="rounded-[2rem] overflow-hidden bg-[#1C1C1E] h-full flex flex-col justify-center px-2.5">
+        <div className="rounded-4xl overflow-hidden bg-[#1C1C1E] h-full flex flex-col justify-center px-2.5">
           {/* Dot grid */}
           <div
             className="grid gap-[2px] mx-auto w-full"
