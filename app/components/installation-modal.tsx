@@ -50,7 +50,7 @@ export function InstallationModal({
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-lg max-h-[90vh] bg-[#0e0e11] border border-white/[0.08] sm:rounded-2xl overflow-hidden flex flex-col">
+      <div className="relative w-full max-w-lg max-h-[90vh] bg-[#0e0e11] border border-white/8 sm:rounded-2xl overflow-hidden flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between px-6 pt-6 pb-4 shrink-0">
           <h2 className="text-xl font-semibold text-white tracking-tight">
@@ -58,7 +58,7 @@ export function InstallationModal({
           </h2>
           <button
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-lg text-white/40 hover:text-white hover:bg-white/[0.06] transition-colors"
+            className="w-8 h-8 flex items-center justify-center rounded-lg text-white/40 hover:text-white hover:bg-white/6 transition-colors"
           >
             <X className="w-4 h-4" />
           </button>
@@ -127,7 +127,7 @@ export function InstallationModal({
                 <span className="text-[#888]">&rarr;</span>{" "}
                 <span className="font-medium text-white">Time of Day</span>{" "}
                 <span className="text-[#888]">&rarr;</span>{" "}
-                <span className="font-medium text-white">6:00 AM</span>{" "}
+                <span className="font-medium text-white">12:01 AM</span>{" "}
                 <span className="text-[#888]">&rarr;</span> Repeat{" "}
                 <span className="font-medium text-white">&quot;Daily&quot;</span>
               </p>
