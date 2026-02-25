@@ -38,7 +38,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20 pt-12 sm:pt-20 pb-24">
           {/* Left text */}
           <div className="flex-1 max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.03] mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/6 bg-white/3 mb-8">
               <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B35] animate-pulse" />
               <span className="text-xs text-white/50 font-medium">
                 Timezone-aware &middot; Updates daily
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
 
         {/* How it works */}
-        <section id="how-it-works" className="py-20 border-t border-white/[0.05]">
+        <section id="how-it-works" className="py-20 border-t border-white/5">
           <h2 className="text-xs font-semibold text-[#888] uppercase tracking-widest mb-12">
             How it works
           </h2>
@@ -129,7 +129,7 @@ export default function Home() {
         </section>
 
         {/* Legend */}
-        <section className="py-16 border-t border-white/[0.05]">
+        <section className="py-16 border-t border-white/5">
           <div className="flex flex-wrap items-center justify-center gap-8">
             <div className="flex items-center gap-2.5">
               <div className="w-3 h-3 rounded-full bg-[#E5E5EA]" />
@@ -147,7 +147,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="py-10 border-t border-white/[0.05] flex items-center justify-between">
+        <footer className="py-10 border-t border-white/5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-[#FF6B35]" />
             <span className="text-xs text-white/40">lifecal</span>
