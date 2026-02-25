@@ -52,6 +52,8 @@ export async function GET(request: Request) {
 
   const timezone = resolveTimezone(request, tzParam);
 
+  console.log(`[days] tz=${timezone} tzParam=${tzParam} width=${width} height=${height}`);
+
   const formatter = new Intl.DateTimeFormat("en-CA", {
     timeZone: timezone,
     year: "numeric",
