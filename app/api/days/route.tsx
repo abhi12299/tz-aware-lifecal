@@ -77,9 +77,10 @@ export async function GET(request: Request) {
   const cellH = gridH / rows;
   const cellSize = Math.min(cellW, cellH);
   const diameter = Math.round(cellSize * 0.78);
-  const gap = Math.round(cellSize - diameter);
-  const totalGridW = COLUMNS * diameter + (COLUMNS - 1) * gap;
-  const totalGridH = rows * diameter + (rows - 1) * gap;
+  const vGap = Math.round(cellSize - diameter);
+  const hGap = Math.round(vGap * 1.5);
+  const totalGridW = COLUMNS * diameter + (COLUMNS - 1) * hGap;
+  const totalGridH = rows * diameter + (rows - 1) * vGap;
   const offsetX = padX + Math.round((gridW - totalGridW) / 2);
   const offsetY = padTop + Math.round((gridH - totalGridH) / 2);
   const fontSize = Math.round(width * 0.03);
@@ -104,7 +105,8 @@ export async function GET(request: Request) {
           left: offsetX,
           top: offsetY,
           width: totalGridW,
-          gap: gap,
+          columnGap: hGap,
+          rowGap: vGap,
         }}
       >
         {days.map((day) => (
